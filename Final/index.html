@@ -207,30 +207,41 @@ $('.c6').click(function(){
   });
 
 
-
+$( ".home" ).click(function() {
+         location.reload(true);
+});
 
 $('video').click(function() {
 if ($(this).hasClass('pause')) {
      $("video").trigger("play");
      $(this).removeClass('pause');
      $(this).addClass('play');
+     $('.sticky').hide();
 } else {
      $("video").trigger("pause");
      $(this).removeClass('play');
      $(this).addClass('pause');
-}
+     $('.sticky').show();
+}});
+
+
+$("video").click(function(){
+
+$('.soundoff').toggle()
 });
 
-$(document).ready(function(){
-  $("video").click(function(){
-$('audio').get(0).pause();
-$('.soundoff').show()
-$('.sound').hide()
-});});
+  $('video').toggle(
+        function () {
+            document.getElementById('song').pause();
+        },
+        function () {
+            document.getElementById('song').play();
+        }
+    );
 
-$('video').click(function(){
+/* $('video').click(function(){
 $('.sticky').toggleClass('sticky2')
-});
+});*/
 
 $('.design').hover(function(){
 $(this).addClass('.design2')
@@ -241,8 +252,7 @@ $( ".design" ).hover(
     $( this ).append( $( "<span> BY EMILY MARTINEZ</span>" ) );
   }, function() {
     $( this ).find( "span:last" ).remove();
-  }
-);
+  });
 
 $( ".about" ).hover(
   function() {
@@ -261,9 +271,10 @@ $( ".contact" ).hover(
 );
 
 
-$( ".home" ).hover(
+/* $( ".home" ).click(
   function() {
-    $( this ).addClass( ".home2" ) });
+    $( this ).addClass( ".home2" ) }); */
+
 
 
 

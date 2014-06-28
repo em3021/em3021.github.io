@@ -219,11 +219,13 @@ if ($(this).hasClass('pause')) {
      $(this).removeClass('pause');
      $(this).addClass('play');
      $('.sticky').hide();
+
 } else {
      $("video").trigger("pause");
      $(this).removeClass('play');
      $(this).addClass('pause');
      $('.sticky').show();
+     $('.abt').hide();
 }});
 
 
@@ -263,16 +265,17 @@ $( ".design" ).hover(
     $( this ).find( "span:last" ).remove();
   }
 );*/
+$('.abt').mouseout(function() {
+    $(this).hide()
+    $('.about').show();
+});
 
 $('.about').mouseover(function() {
     $(this).hide()
     $('.abt').show();
 });
 
-$('.abt').mouseout(function() {
-    $(this).hide()
-    $('.about').show();
-});
+
  
 $( ".contact" ).hover(
   function() {

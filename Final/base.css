@@ -62,11 +62,13 @@ header{
 #map-continents {display:none; float: left; position: fixed; margin-left: 0; opacity: .8;}
 
 
-.sticky {position: fixed; bottom: 0; right: 0; background: black; font: white; z-index: 10; opacity: .8; width: 100%; height: 0px;
-font-family: helvetica; font-size: 14px; text-align: right; height: 50px; padding-right: 10px; display: none;}
+.sticky {position: fixed; bottom: 0; right: 0; background: black; font: white; z-index: 10; opacity: .8; width: 100%;
+font-family: helvetica; font-size: 14px; text-align: right; height: 25px; padding-right: 10px; padding-top: 5px; padding-bottom: 0; display: none;}
 
-.sticky3 {position: fixed; bottom: 0; right: 0; background: black; font: white; z-index: 10; opacity: .8; width: 100%; height: 0px;
-font-family: helvetica; font-size: 14px; text-align: right; height: 50px; padding-right: 10px;}
+.sticky2 {position: fixed; bottom: 0; right: 0; background: transparent; z-index: 10; width: 100%; height: 50px;}
+
+.sticky3 {position: fixed; bottom: 0; right: 0; background: black; font: white; z-index: 10; opacity: .8; width: 100%;
+font-family: helvetica; font-size: 14px; text-align: right; height: 25px; padding-right: 10px; padding-top: 5px; padding-bottom: 0;}
 
 video { float: left; position: fixed; z-index: -1; width: 100%; display: none;}
 audio { float: left; position: fixed; z-index: -1; width: 100%;}
@@ -75,6 +77,15 @@ audio { float: left; position: fixed; z-index: -1; width: 100%;}
 .sound {cursor: pointer; z-index: 998; position: fixed; right: 0; display: none;}
 .soundoff {cursor: pointer; z-index: 999; position: fixed; right: 0; display: none;}
 .home, .design, .about, .contact {cursor: pointer;}
+.home:hover, .design:hover, .about:hover, .contact:hover, .abt:hover {color: #fc0;}
+.abt {display: none; padding-right: 60px;}
+.map-visible-list a:hover,.map-visible-list a:focus,.map-visible-list li.focus {color: red;}
+
+a, a:visited { /* For links that are in the browser history (Previously visited) */ 
+text-decoration: none; 
+color: inherit; 
+} 
+
 
 @media (max-width: 800px) {
 

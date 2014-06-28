@@ -44,7 +44,7 @@
    /* color: #eee; */
   }
  .map-visible-list a:hover,.map-visible-list a:focus,.map-visible-list li.focus a{
-   /* color: #fc0; */
+   color: red;
   }
  .map-visible-list a:active,.map-visible-list li.active-region a{
    /* color: #cc3; */

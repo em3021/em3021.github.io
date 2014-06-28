@@ -41,9 +41,10 @@
 </div>
 
 <div class="sticky3" style="display: none">
-<span class="design" style="padding-right: 60px">DESIGN</span>
-<span class="about" style="padding-right: 60px">ABOUT</span>
-<span class="contact" style="padding-right: 20px">CONTACT</span>
+<a href="http://martinezportfolio.wordpress.com" target="_blank"><span class="design" style="padding-right: 60px">DESIGN</span></a>
+<a href="http://eol.jsc.nasa.gov/Videos/CrewEarthObservationsVideos/" target="_blank"><span class="about" style="padding-right: 60px">ABOUT 
+</span><span class="abt"> VIDEOS BY NASA / MUSIC BY KAI ENGEL</span></a>
+<a href="mailto:em3021@columbia.edu?Subject=Space is Awesome"><span class="contact" style="padding-right: 20px">CONTACT</span></a>
 </div>
 
 <span>
@@ -88,10 +89,11 @@
 
 <div class="sticky">
 <span class="home" style="padding-right: 60px">HOME</span>
-<span class="design" style="padding-right: 60px">DESIGN</span>
-<span class="about" style="padding-right: 60px">ABOUT</span>
-<span class="contact" style="padding-right: 20px">CONTACT</span>
+<a href="http://martinezportfolio.wordpress.com" target="_blank"><span class="design" style="padding-right: 60px">DESIGN</span></a>
+<a href="http://eol.jsc.nasa.gov/Videos/CrewEarthObservationsVideos/" target="_blank"><span class="about" style="padding-right: 60px">ABOUT</span><span class="abt"> VIDEOS BY NASA / MUSIC BY KAI ENGEL</span></a>
+<a href="mailto:em3021@columbia.edu?Subject=Space is Awesome"><span class="contact" style="padding-right: 20px">CONTACT</span></a>
 </div>
+
 </div>
 </div>
  
@@ -254,21 +256,33 @@ $( ".design" ).hover(
     $( this ).find( "span:last" ).remove();
   });
 
-$( ".about" ).hover(
+/*$( ".about" ).hover(
   function() {
     $( this ).append( $( "<span> VIDEOS BY NASA / MUSIC BY KAI ENGEL</span>" ) );
   }, function() {
     $( this ).find( "span:last" ).remove();
   }
-);
+);*/
+
+$('.about').mouseover(function() {
+    $(this).hide()
+    $('.abt').show();
+});
+
+$('.abt').mouseout(function() {
+    $(this).hide()
+    $('.about').show();
+});
  
 $( ".contact" ).hover(
   function() {
     $( this ).append( $( "<span> EM3021@COLUMBIA.EDU </span>" ) );
-  }, function() {
+  }, 
+  function() {
     $( this ).find( "span:last" ).remove();
   }
 );
+
 
 var justHidden = false;
 

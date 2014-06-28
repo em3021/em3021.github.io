@@ -47,36 +47,36 @@
 </div>
 
 <span>
-         <video id="video1" controls="false" preload="none" loop>
+         <video id="video1" controls="false"  loop>
     <source src="media/northtosouth.mp4#t=4" type="video/mp4">
     </video>
     </span>
 
     <span >
-         <video id="video2" controls="false" preload="none" loop>
+         <video id="video2" controls="false"  loop>
     <source src="media/africa.mp4#t=4" type="video/mp4">
     </video>
     </span>
     
     <span >
-         <video id="video3" controls="false" preload="none" loop>
+         <video id="video3" controls="false"  loop>
     <source src="media/spain.mp4#t=4" type="video/mp4">
     </video>
     </span>
 <span >
-         <video id="video4" controls="false" preload="none" loop>
+         <video id="video4" controls="false"  loop>
     <source src="media/china.mp4#t=5" type="video/mp4">
     </video>
     </span>
 
 <span >
-         <video id="video5" controls="false" preload="none" loop>
+         <video id="video5" controls="false"  loop>
     <source src="media/phillipines.mp4#t=4" type="video/mp4">
     </video>
     </span>
 
 <span >
-         <video id="video6" controls="false" preload="none" loop>
+         <video id="video6" controls="false"  loop>
     <source src="media/samerica.mp4" type="video/mp4">
     </video>
     </span>
@@ -269,6 +269,28 @@ $( ".contact" ).hover(
     $( this ).find( "span:last" ).remove();
   }
 );
+
+var justHidden = false;
+
+    var j;
+    $(document).mousemove(function() {
+        if (!justHidden) {
+            justHidden = false;
+            console.log('move');
+            clearTimeout(j);
+            $('html').css({cursor: 'default'});
+            j = setTimeout(hide, 5000);
+        }
+    });
+
+
+function hide() {
+    $('html').css({cursor: 'none'});
+    justHidden = true;
+    setTimeout(function() {
+        justHidden = false;
+    }, 1000);
+}
 
 
 /* $( ".home" ).click(

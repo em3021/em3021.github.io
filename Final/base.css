@@ -4,9 +4,10 @@ body {background: black;
     -webkit-font-smoothing: antialiased;
     height: 100%;
 }
+@font-face {font-family: 'Geometric Way';
+src: url("GeometricWay.ttf");}
 
-h1{font-family: 'Geometric Way', sans-serif;
-src: url("GeometricWay.ttf");
+h1{font-family: 'Geometric Way';
 font-weight: 500;}
 
 

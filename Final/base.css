@@ -3,13 +3,16 @@ body {background: black;
     color:#222;
     -webkit-font-smoothing: antialiased;
     height: 100%;
+    width: 100%;
 }
-@font-face {font-family: 'Geometric Way';
-src: url("GeometricWay.ttf");}
+@font-face {font-family: Geometric Way;
+src: url('GeometricWay.ttf');}
 
-h1{font-family: 'Geometric Way';
-font-weight: 500;}
-
+h1{font-family: Geometric Way;
+font-weight: 500;
+color: #FFF;
+}
+/*color:#C9EEFF;*/
 
 /* Sliding panels */
 /*.curtains>li {
@@ -23,8 +26,6 @@ font-weight: 500;}
 /* Section 1 */
 
 #section-1{
-    background: black;
-    background-size:cover;
     width: 100%;
     height: 100%;
     margin-left: 0;
@@ -32,15 +33,19 @@ font-weight: 500;}
     left: 0;}
 
 header{
-        color:#FFF;
+        
         position:absolute;
-        margin-left: 30%;
-        text-align:center;
-        text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
-        line-height:1.1;}
+        margin-top: 10%;
+        text-align: center;
+        text-shadow: 10px 10px 20px white;
+        line-height:1.1;
+        width: 100%;}
+
+.earth img {width: 100%; display: none;}
 
 #section-1 h1{
-        font-size:120px;
+        font-size:100px;
+       
     }
 
 #section-1 h2{
@@ -64,12 +69,19 @@ header{
 
 
 .sticky {position: fixed; bottom: 0; right: 0; background: black; font: white; z-index: 10; opacity: .8; width: 100%;
-font-family: helvetica; font-size: 14px; text-align: right; height: 25px; padding-right: 10px; padding-top: 5px; padding-bottom: 0; display: none;}
+font-family: 'Open Sans', sans-serif; font-size: 14px; text-align: right; height: 30px; padding-right: 10px; 
+padding-top: 5px; padding-bottom: 0; display: none;
+letter-spacing: 1px;
+}
 
-.sticky2 {position: fixed; bottom: 0; right: 0; background: transparent; z-index: 10; width: 100%; height: 50px;}
+.sticky2 {font-family: 'Open Sans', sans-serif; position: fixed; bottom: 0; right: 0; 
+background: transparent; z-index: 10; width: 100%; height: 50px;}
 
 .sticky3 {position: fixed; bottom: 0; right: 0; background: black; font: white; z-index: 10; opacity: .8; width: 100%;
-font-family: helvetica; font-size: 14px; text-align: right; height: 25px; padding-right: 10px; padding-top: 5px; padding-bottom: 0;}
+font-family: 'Open Sans', sans-serif; font-size: 14px; text-align: right; height: 30px; 
+padding-right: 10px; padding-top: 5px; padding-bottom: 0;
+letter-spacing: 1px;
+}
 
 video { float: left; position: fixed; z-index: -1; width: 100%; display: none;}
 audio { float: left; position: fixed; z-index: -1; width: 100%;}
@@ -78,9 +90,8 @@ audio { float: left; position: fixed; z-index: -1; width: 100%;}
 .sound {cursor: pointer; z-index: 998; position: fixed; right: 0; display: none;}
 .soundoff {cursor: pointer; z-index: 999; position: fixed; right: 0; display: none;}
 .home, .design, .about, .contact {cursor: pointer;}
-.home:hover, .design:hover, .about:hover, .contact:hover, .abt:hover {color: #fc0;}
+.home:hover, .design:hover, .about:hover, .contact:hover, .abt:hover {color: #fc0; text-shadow: 1px 1px 2px #fc0;}
 .abt {display: none; padding-right: 60px;}
-.map-visible-list a:hover,.map-visible-list a:focus,.map-visible-list li.focus {color: red;}
 
 a, a:visited { /* For links that are in the browser history (Previously visited) */ 
 text-decoration: none; 

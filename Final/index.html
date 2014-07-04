@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Around the World</title>
+    <link rel="stylesheet" href="Arctext/css/style.css">
     <link rel="stylesheet" href="curtain.css">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="cssmap-continents/cssmap-continents.css" />
     <link rel="stylesheet" href="base.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     
 </head>
 <body>
 
 <div>
 
-<div id="section-1">
+<div id="section-1" >
         <header>
-            <h1>Around<br>the<br>World</h1>
+            <h1>Around <br>the <br>World</h1>
+
         </header>
-
-
-
+        <div class="earth" ><img src="media/earth.jpg"></div>
 </div>
 
 
@@ -44,7 +45,7 @@
 <a href="http://martinezportfolio.wordpress.com" target="_blank"><span class="design" style="padding-right: 60px">DESIGN</span></a>
 <a href="http://eol.jsc.nasa.gov/Videos/CrewEarthObservationsVideos/" target="_blank"><span class="about" style="padding-right: 60px">ABOUT 
 </span><span class="abt"> VIDEOS BY NASA / MUSIC BY KAI ENGEL</span></a>
-<a href="mailto:em3021@columbia.edu?Subject=Space is Awesome"><span class="contact" style="padding-right: 20px">CONTACT</span></a>
+<a href="mailto:em3021@columbia.edu?Subject=Space is Awesome"><span class="contact" style="padding-right: 60px">CONTACT</span></a>
 </div>
 
 <span>
@@ -91,7 +92,7 @@
 <span class="home" style="padding-right: 60px">HOME</span>
 <a href="http://martinezportfolio.wordpress.com" target="_blank"><span class="design" style="padding-right: 60px">DESIGN</span></a>
 <a href="http://eol.jsc.nasa.gov/Videos/CrewEarthObservationsVideos/" target="_blank"><span class="about" style="padding-right: 60px">ABOUT</span><span class="abt"> VIDEOS BY NASA / MUSIC BY KAI ENGEL</span></a>
-<a href="mailto:em3021@columbia.edu?Subject=Space is Awesome"><span class="contact" style="padding-right: 20px">CONTACT</span></a>
+<a href="mailto:em3021@columbia.edu?Subject=Space is Awesome"><span class="contact" style="padding-right: 60px">CONTACT</span></a>
 </div>
 
 </div>
@@ -104,15 +105,21 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="curtain.js"></script>
 <script type="text/javascript" src="http://cssmapsplugin.com/4/jquery.cssmap.js"></script>
+<script type="text/javascript" src="Arctext/js/jquery.arctext.js"></script>
+
 
 <script>
 
 
+
 $(document).ready(function(){
-  $('#section-1').fadeOut(5000)
-  $('#map-continents').fadeIn(6000)
-  $('.sticky3').fadeIn(6000)
+  $('#section-1').fadeOut(3000)
+  $('#map-continents').fadeIn(4000)
+  $('.sticky3').fadeIn(5000)
 });
+
+
+/*$('h1').arctext({radius: 2500});*/
 
   $(function($){
   $('#map-continents').cssMap({
@@ -314,6 +321,7 @@ function hide() {
         justHidden = false;
     }, 1000);
 }
+
 
 
 /* $( ".home" ).click(

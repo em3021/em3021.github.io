@@ -29,7 +29,7 @@
 <img class="sound" src="media/sound.png" width="100">
 
 
-<div id="map-continents">
+<div id="map"><div id="map-continents">
          <ul class="continents">
           <li class="c1"><a href="#africa">Africa</a></li>
           <li class="c2"><a href="#asia">Asia</a></li>
@@ -39,13 +39,13 @@
           <li class="c6"><a href="#south-america">South America</a></li>
          </ul>
 
-</div>
+</div></div>
 
 <div class="sticky3" style="display: none">
-<a href="http://martinezportfolio.wordpress.com" target="_blank"><span class="design" style="padding-right: 60px">DESIGN</span></a>
-<a href="http://eol.jsc.nasa.gov/Videos/CrewEarthObservationsVideos/" target="_blank"><span class="about" style="padding-right: 60px">ABOUT 
+<a href="http://martinezportfolio.wordpress.com" target="_blank"><span class="design" style="padding-right: 5%">DESIGN</span></a>
+<a href="http://eol.jsc.nasa.gov/Videos/CrewEarthObservationsVideos/" target="_blank"><span class="about" style="padding-right: 5%">ABOUT 
 </span><span class="abt"> VIDEOS BY NASA / MUSIC BY KAI ENGEL</span></a>
-<a href="mailto:em3021@columbia.edu?Subject=Space is Awesome"><span class="contact" style="padding-right: 60px">CONTACT</span></a>
+<a href="mailto:em3021@columbia.edu?Subject=Space is Awesome"><span class="contact" style="padding-right: 5%">CONTACT</span></a>
 </div>
 
 <span>
@@ -89,10 +89,10 @@
 
 
 <div class="sticky">
-<span class="home" style="padding-right: 60px">HOME</span>
-<a href="http://martinezportfolio.wordpress.com" target="_blank"><span class="design" style="padding-right: 60px">DESIGN</span></a>
-<a href="http://eol.jsc.nasa.gov/Videos/CrewEarthObservationsVideos/" target="_blank"><span class="about" style="padding-right: 60px">ABOUT</span><span class="abt"> VIDEOS BY NASA / MUSIC BY KAI ENGEL</span></a>
-<a href="mailto:em3021@columbia.edu?Subject=Space is Awesome"><span class="contact" style="padding-right: 60px">CONTACT</span></a>
+<span class="home" style="padding-right: 5%">HOME</span>
+<a href="http://martinezportfolio.wordpress.com" target="_blank"><span class="design" style="padding-right: 5%">DESIGN</span></a>
+<a href="http://eol.jsc.nasa.gov/Videos/CrewEarthObservationsVideos/" target="_blank"><span class="about" style="padding-right: 5%">ABOUT</span><span class="abt"> VIDEOS BY NASA / MUSIC BY KAI ENGEL</span></a>
+<a href="mailto:em3021@columbia.edu?Subject=Space is Awesome"><span class="contact" style="padding-right: 5%">CONTACT</span></a>
 </div>
 
 </div>
@@ -129,8 +129,7 @@ $(document).ready(function(){
         $('#map-continents').cssMap({
     'size': 430, 'tooltips': false,})
         .continents
-        $('audio').get(0)
-        .play()
+        $('#map').css("margin-left", "0px")
         $('.sound').show()
         $('.soundoff').hide()
         $('.sticky3').hide()
@@ -248,7 +247,7 @@ $('video').toggle(
         });
 
 
-$('.continents').click(function() {
+$('li').click(function() {
      $('.sticky').hide();
      $('audio').get(0).play()
      $('.soundoff').hide()

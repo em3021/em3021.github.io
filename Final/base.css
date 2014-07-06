@@ -66,6 +66,8 @@ header{
 
 
 #map-continents {display:none; float: left; position: fixed; margin-left: 0; opacity: .8;}
+#map {margin-left: 7%;}
+
 
 
 .sticky {position: fixed; bottom: 0; right: 0; background: black; font: white; z-index: 10; opacity: .8; width: 100%;

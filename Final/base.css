@@ -91,7 +91,7 @@ video { float: left; position: fixed; z-index: -1; width: 100%; display: none;}
 audio { float: left; position: fixed; z-index: -1; width: 100%;}
 
 .soundoff {z-index: 999; position: fixed; right: 0; display: none;}
-.home, .design, .about, .contact {cursor: pointer;}
+.home, .design, .about, .contact {cursor: pointer; padding-right: 5%;}
 .home:hover, .design:hover, .about:hover, .contact:hover, .abt:hover {color: #fc0; text-shadow: 1px 1px 2px #fc0;}
 .abt {display: none; padding-right: 60px;}
 
@@ -111,8 +111,8 @@ header {margin-top: 0px;}
 video { display: none; position: fixed; z-index: -1; max-height: 100%;}
 
 #map {margin-left: 0;}
-.sticky3, .sticky {top: 0; font-size: 10px; height: 25px;}
-.contact {padding-right: 0px;}
+.sticky3, .sticky {top: 0; font-size: 10px; height: 25px;1vfd}
+span.contact {padding-right: 0px;}
 
 .m1280{width:430px} .m1280 .continents,.m1280 .continents .bg,.m1280 .continents-cities{background:transparent url('cssmap-continents/continents-430.png') no-repeat 0 0} .m1280 .continents,.m1280 .continents-cities{height:220px;width:430px} .m1280 .continents-cities{background-position:-440px 0} .m1280 .continents .m{margin:10000px 0 0 5px} .m1280 .continents .m span{font-size:26px !important;padding:0 1px 1px 0}
 .m1280 .c1.focus .bg,.m1280 .c1.active-region .bg{height:75px;left:171px;top:91px;width:75px}.m1280 .c1.focus .bg{background-position:-204px -433px}.m1280 .c1.active-region .bg{background-position:-644px -433px} .m1280 .c2.focus .bg,.m1280 .c2.active-region .bg{height:133px;left:216px;top:8px;width:141px}.m1280 .c2.focus .bg{background-position:-4px -266px}.m1280 .c2.active-region .bg{background-position:-444px -266px} .m1280 .c3.focus .bg,.m1280 .c3.active-region .bg{height:68px;left:311px;top:115px;width:87px}.m1280 .c3.focus .bg{background-position:-85px -431px}.m1280 .c3.active-region .bg{background-position:-525px -431px} .m1280 .c4.focus .bg,.m1280 .c4.active-region .bg{height:83px;left:168px;top:12px;width:81px}.m1280 .c4.focus .bg{background-position:-310px -425px}.m1280 .c4.active-region .bg{background-position:-750px -425px} .m1280 .c5.focus .bg,.m1280 .c5.active-region .bg{height:118px;left:8px;top:5px;width:175px}.m1280 .c5.focus .bg{background-position:-182px -266px}.m1280 .c5.active-region .bg{background-position:-622px -266px} .m1280 .c6.focus .bg,.m1280 .c6.active-region .bg{height:77px;left:102px;top:117px;width:51px}.m1280 .c6.focus .bg{background-position:-4px -429px}.m1280 .c6.active-region .bg{background-position:-444px -429px}

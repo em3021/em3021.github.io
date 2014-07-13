@@ -88,7 +88,7 @@ letter-spacing: 1px;
 video { float: left; position: fixed; z-index: -1; width: 100%; display: none;}
 audio { float: left; position: fixed; z-index: -1; width: 100%;}
 
-.soundoff {cursor: pointer; z-index: 999; position: fixed; right: 0; display: none;}
+.soundoff {z-index: 999; position: fixed; right: 0; display: none;}
 .home, .design, .about, .contact {cursor: pointer;}
 .home:hover, .design:hover, .about:hover, .contact:hover, .abt:hover {color: #fc0; text-shadow: 1px 1px 2px #fc0;}
 .abt {display: none; padding-right: 60px;}

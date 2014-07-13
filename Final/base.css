@@ -101,11 +101,12 @@ color: inherit;
 } 
 
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
 
 #section-1 h1{
-        font-size: 50px;
-        margin-top: 100px;}
+        font-size: 40px;
+        margin-top: 0px;}
+        
 header {margin-top: 0px;}
 #section-2 {margin-top: 40px;}
 video { display: none; position: fixed; z-index: -1; max-height: 100%;}
@@ -114,8 +115,8 @@ video { display: none; position: fixed; z-index: -1; max-height: 100%;}
 .sticky3, .sticky {top: 0; font-size: 10px; height: 25px;1vfd}
 span.contact {padding-right: 0px;}
 
-.m1280{width:430px} .m1280 .continents,.m1280 .continents .bg,.m1280 .continents-cities{background:transparent url('cssmap-continents/continents-430.png') no-repeat 0 0} .m1280 .continents,.m1280 .continents-cities{height:220px;width:430px} .m1280 .continents-cities{background-position:-440px 0} .m1280 .continents .m{margin:10000px 0 0 5px} .m1280 .continents .m span{font-size:26px !important;padding:0 1px 1px 0}
-.m1280 .c1.focus .bg,.m1280 .c1.active-region .bg{height:75px;left:171px;top:91px;width:75px}.m1280 .c1.focus .bg{background-position:-204px -433px}.m1280 .c1.active-region .bg{background-position:-644px -433px} .m1280 .c2.focus .bg,.m1280 .c2.active-region .bg{height:133px;left:216px;top:8px;width:141px}.m1280 .c2.focus .bg{background-position:-4px -266px}.m1280 .c2.active-region .bg{background-position:-444px -266px} .m1280 .c3.focus .bg,.m1280 .c3.active-region .bg{height:68px;left:311px;top:115px;width:87px}.m1280 .c3.focus .bg{background-position:-85px -431px}.m1280 .c3.active-region .bg{background-position:-525px -431px} .m1280 .c4.focus .bg,.m1280 .c4.active-region .bg{height:83px;left:168px;top:12px;width:81px}.m1280 .c4.focus .bg{background-position:-310px -425px}.m1280 .c4.active-region .bg{background-position:-750px -425px} .m1280 .c5.focus .bg,.m1280 .c5.active-region .bg{height:118px;left:8px;top:5px;width:175px}.m1280 .c5.focus .bg{background-position:-182px -266px}.m1280 .c5.active-region .bg{background-position:-622px -266px} .m1280 .c6.focus .bg,.m1280 .c6.active-region .bg{height:77px;left:102px;top:117px;width:51px}.m1280 .c6.focus .bg{background-position:-4px -429px}.m1280 .c6.active-region .bg{background-position:-444px -429px}
-.m1280 .c1 a{left:225px;top:127px}.m1280 .c1 a.tooltip-right .tooltip-arrow{right:205px} .m1280 .c2 a{left:288px;top:72px}.m1280 .c2 a.tooltip-right .tooltip-arrow{right:142px} .m1280 .c3 a{left:345px;top:166px}.m1280 .c3 a.tooltip-right .tooltip-arrow{right:85px} .m1280 .c4 a{left:218px;top:82px}.m1280 .c4 a.tooltip-left .tooltip-arrow{left:218px} .m1280 .c5 a{left:94px;top:75px}.m1280 .c5 a.tooltip-left .tooltip-arrow{left:94px} .m1280 .c6 a{left:138px;top:151px}.m1280 .c6 a.tooltip-left .tooltip-arrow{left:138px}
+.m1280{width:320px} .m1280 .continents,.m1280 .continents .bg,.m1280 .continents-cities{background:transparent url('cssmap-continents/continents-320.png') no-repeat 0 0} .m1280 .continents,.m1280 .continents-cities{height:165px;width:320px} .m1280 .continents-cities{background-position:-330px 0} .m1280 .continents .m{margin:9999px 0 0 0} .m1280 .continents .m span{font-size:20px !important}
+.m1280 .c1.focus .bg,.m1280 .c1.active-region .bg{height:58px;left:126px;top:66px;width:58px}.m1280 .c1.focus .bg{background-position:-170px -341px}.m1280 .c1.active-region .bg{background-position:-520px -341px} .m1280 .c2.focus .bg,.m1280 .c2.active-region .bg{height:103px;left:160px;top:2px;width:109px}.m1280 .c2.focus .bg{background-position:-6px -210px}.m1280 .c2.active-region .bg{background-position:-356px -210px} .m1280 .c3.focus .bg,.m1280 .c3.active-region .bg{height:53px;left:233px;top:85px;width:67px}.m1280 .c3.focus .bg{background-position:-76px -343px}.m1280 .c3.active-region .bg{background-position:-426px -343px} .m1280 .c4.focus .bg,.m1280 .c4.active-region .bg{height:64px;left:123px;top:5px;width:62px}.m1280 .c4.focus .bg{background-position:-259px -336px}.m1280 .c4.active-region .bg{background-position:-609px -336px} .m1280 .c5.focus .bg,.m1280 .c5.active-region .bg{height:91px;left:0;top:0;width:135px}.m1280 .c5.focus .bg{background-position:-154px -211px}.m1280 .c5.active-region .bg{background-position:-504px -211px} .m1280 .c6.focus .bg,.m1280 .c6.active-region .bg{height:60px;left:72px;top:86px;width:40px}.m1280 .c6.focus .bg{background-position:-6px -342px}.m1280 .c6.active-region .bg{background-position:-356px -342px}
+.m1280 .c1 a{left:169px;top:96px}.m1280 .c1 a.tooltip-left .tooltip-arrow{left:169px} .m1280 .c2 a{left:218px;top:53px}.m1280 .c2 a.tooltip-right .tooltip-arrow{right:102px} .m1280 .c3 a{left:261px;top:126px}.m1280 .c3 a.tooltip-right .tooltip-arrow{right:59px} .m1280 .c4 a{left:164px;top:62px}.m1280 .c4 a.tooltip-left .tooltip-arrow{left:164px} .m1280 .c5 a{left:69px;top:56px}.m1280 .c5 a.tooltip-left .tooltip-arrow{left:69px} .m1280 .c6 a{left:102px;top:115px}.m1280 .c6 a.tooltip-left .tooltip-arrow{left:102px}
 
 

@@ -200,7 +200,8 @@ body {background-color: black;
 		padding-top: 40px;
 		padding-right: 15px;
 		float: right;
-		padding-top: 0px;}
+		padding-top: 0px;
+		display: inherit;}
 .name {font-size: 16px;
 		font-family: 'Cardo', serif;
 		letter-spacing: 1px;

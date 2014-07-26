@@ -118,16 +118,15 @@ p 	{color: white;
 
 
 .soundcite-play:before {
-    font-size: 0.9em;
+    font-size: 0.7em;
     position: relative;
-    height: 12px;
     top: -.05em;
     border: 0.5em solid transparent;
     border-left: 0.75em solid black;
 }
 
 .soundcite-pause:before {
-    font-size: 0.9em;
+    font-size: 0.7em;
     position: relative;
     top: -.05em;
     height: 1em;

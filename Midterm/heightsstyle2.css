@@ -132,6 +132,10 @@ p 	{color: white;
     margin-right: 0em;
 }
 
+span.soundcite.francisco.soundcite-loaded.soundcite-play {
+
+	width: 500px;
+}
 
 .soundcite-play:before {
     font-size: 0.6em;

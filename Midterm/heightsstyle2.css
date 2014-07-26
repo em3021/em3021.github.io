@@ -118,7 +118,7 @@ p 	{color: white;
 
 
 .soundcite-play:before {
-    font-size: 0.7em;
+    font-size: 0.6em;
     position: relative;
     top: -.05em;
     border: 0.5em solid transparent;
@@ -126,7 +126,7 @@ p 	{color: white;
 }
 
 .soundcite-pause:before {
-    font-size: 0.7em;
+    font-size: 0.6em;
     position: relative;
     top: -.05em;
     height: 1em;

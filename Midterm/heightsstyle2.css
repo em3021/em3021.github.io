@@ -117,6 +117,22 @@ p 	{color: white;
 #box5 {display: inherit;}
 
 
+.soundcite-loaded {
+    border-radius: 6px;
+    padding: 0 0px 0 10px;
+    display: inline-block;
+    cursor: pointer;
+    background: rgba(0,0,0,.1);
+}
+
+.soundcite-loaded:before {
+    display: inline-block;
+    content: "";
+    vertical-align: -10%;
+    margin-right: 0em;
+}
+
+
 .soundcite-play:before {
     font-size: 0.6em;
     position: relative;

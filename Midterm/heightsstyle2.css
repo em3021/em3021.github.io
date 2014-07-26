@@ -130,7 +130,7 @@ p 	{color: white;
     position: relative;
     top: -.05em;
     height: 1em;
-    border-left: .75em double black;
+    border-left: .75em double white;
     border-right: .5em solid transparent;
 }
 

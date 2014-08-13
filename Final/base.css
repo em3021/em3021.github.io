@@ -112,6 +112,9 @@ header {margin-top: 0px;}
 video { display: none; position: fixed; z-index: -1; max-height: 100%;}
 
 #map {margin-left: 0;}
+
+#map-continents {opacity: 1;}
+
 .sticky3, .sticky {top: 0; font-size: 10px; height: 25px;1vfd}
 span.contact {padding-right: 0px;}
 

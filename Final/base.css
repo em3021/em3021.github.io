@@ -109,7 +109,7 @@ color: inherit;
         
 header {margin-top: 0px;}
 #section-2 {margin-top: 40px;}
-video { display: none; position: fixed; z-index: -1; max-height: 100%;}
+video {display: none; position: fixed; z-index: -1; max-height: 100%;}
 
 #map {margin-left: 0;}
 

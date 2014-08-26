@@ -87,9 +87,10 @@
     </span>
 
 
-<div class="sticky">
+<div class="sticky" style="display: none">
 <span class="home">HOME</span>
-<a href="http://martinezportfolio.wordpress.com" target="_blank"><span class="design">DESIGN</span></a>
+<a href="http://martinezportfolio.wordpress.com" target="_blank">
+<span class="design">DESIGN</span></a>
 <a href="http://eol.jsc.nasa.gov/Videos/CrewEarthObservationsVideos/" target="_blank"><span class="about">ABOUT</span><span class="abt"> VIDEOS FROM THE ISS / MUSIC BY KAI ENGEL</span></a>
 <a href="mailto:em3021@columbia.edu?Subject=Space is Awesome"><span class="contact">CONTACT</span></a>
 </div>
@@ -224,21 +225,6 @@ if ($(this).hasClass('pause')) {
 }});
 
 
-$('video').click(function() {
-if ($(this).hasClass('pause')) {
-     $("video").trigger("play");
-     $(this).removeClass('pause');
-     $(this).addClass('play');
-     $('.sticky').hide();
-
-} else {
-     $("video").trigger("pause");
-     $(this).removeClass('play');
-     $(this).addClass('pause');
-     $('.sticky').show();
-     $('.abt').hide();
-}});
-
 
 $("video").click(function(){
 $('.soundoff').toggle()
@@ -313,18 +299,8 @@ function hide() {
     justHidden = true;
     setTimeout(function() {
         justHidden = false;
-    }, 1000);
-}
+    }, 1000)};
 
-/* $(window).resize(function(){
-
-       if ($(window).width() <= 320) {  
-
-              // is mobile device
-
-       }     
-
-}); */
 
 
 

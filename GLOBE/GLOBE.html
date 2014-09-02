@@ -11,15 +11,18 @@
 
 <canvas id='rotatingGlobe' width='400' height='400'
   style='width: 400px; height: 400px; cursor: move;'></canvas>
-  <script type='text/javascript'>
+  
+
+<script type='text/javascript'>
+
 (function() {
   var globe = planetaryjs.planet();
   // Load our custom `autorotate` plugin; see below.
   
   globe.loadPlugin(planetaryjs.plugins.earth({
-    topojson: { file:   'world-110m-withlakes.json' },
+    topojson: { file:   'world-110m.json' },
     oceans:   { fill:   'black' },
-    land:     { fill:   '#eee' },
+    land:     { fill:   '#eee'},
     //borders:  { stroke: '#008000' }
   }));
   // Load our custom `lakes` plugin to draw lakes; see below.
@@ -29,9 +32,9 @@
 
   // The `zoom` and `drag` plugins enable
   // manipulating the globe with the mouse.
-  globe.loadPlugin(planetaryjs.plugins.zoom({
+  /*globe.loadPlugin(planetaryjs.plugins.zoom({
     scaleExtent: [100, 300]
-  }));
+  }));*/
   globe.loadPlugin(planetaryjs.plugins.drag({
     // Dragging the globe should pause the
     // automatic rotation until we release the mouse.
@@ -84,7 +87,8 @@
     };
   };
 })();
-  </script>
+
+</script>
 
 </body>
 </html>

@@ -1,10 +1,10 @@
 <html>
 <head>
 <link type="text/css" rel="stylesheet" href="globe.css">
-  <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
+  <script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script>
   <script type='text/javascript' src='topojson.js'></script>
   <script type='text/javascript' src='planetaryjs.js'></script>
-  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
 </head>
 <body>
@@ -44,15 +44,6 @@
   }));
   // Set up the globe's initial scale, offset, and rotation.
   globe.projection.scale(175).translate([175, 175]).rotate([0, -10, 0]);
-
-  // Every few hundred milliseconds, we'll draw another random ping.
-  var colors = ['red', 'yellow', 'white', 'orange', 'green', 'cyan', 'pink'];
-  setInterval(function() {
-    var lat = Math.random() * 170 - 85;
-    var lng = Math.random() * 360 - 180;
-    var color = colors[Math.floor(Math.random() * colors.length)];
-    globe.plugins.pings.add(lng, lat, { color: color, ttl: 2000, angle: Math.random() * 10 });
-  }, 150);
 
   var canvas = document.getElementById('rotatingGlobe');
   // Special code to handle high-density displays (e.g. retina, some phones)

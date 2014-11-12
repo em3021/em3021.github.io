@@ -291,12 +291,14 @@ var main = function() {
   $(document).keypress(function(event) {
  if(event.which === 32) {
   $('.soundoff').toggle();
+  $('song').toggle();
+  
     if ($(this).hasClass('pause')) {
      $("video").trigger("play");
      $(this).removeClass('pause');
      $(this).addClass('play');
      $('.sticky').hide();
-     $('song').pause();
+     
 
 } else {if(event.which === 32) {
      $("video").trigger("pause");
@@ -304,7 +306,7 @@ var main = function() {
      $(this).addClass('pause');
      $('.sticky').show();
      $('.abt').hide();
-     $('song').play();
+
       
    };
 };

@@ -296,9 +296,7 @@ var main = function() {
      $(this).removeClass('pause');
      $(this).addClass('play');
      $('.sticky').hide();
-     function () {
-            document.getElementById('song').pause();
-        };
+     $('song').pause();
 
 } else {if(event.which === 32) {
      $("video").trigger("pause");
@@ -306,9 +304,8 @@ var main = function() {
      $(this).addClass('pause');
      $('.sticky').show();
      $('.abt').hide();
-      function () {
-            document.getElementById('song').play();
-        };
+     $('song').play();
+      
    };
 };
 

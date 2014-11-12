@@ -285,6 +285,7 @@ function hide() {
         justHidden = false;
     }, 1000)};
 
+
 var main = function() {
   $(document).keypress(function(event) {
  if(event.which === 32) {
@@ -293,6 +294,7 @@ var main = function() {
      $(this).removeClass('pause');
      $(this).addClass('play');
      $('.sticky').hide();
+ 
 
 } else {
      $("video").trigger("pause");
@@ -300,8 +302,18 @@ var main = function() {
      $(this).addClass('pause');
      $('.sticky').show();
      $('.abt').hide();
+     
 }
+$('.soundoff').toggle();
+$('video').toggle(
+        function () {
+            document.getElementById('song').pause();
+        },
+        function () {
+            document.getElementById('song').play();
+        });
 };
+
 });
 };
 

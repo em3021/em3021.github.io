@@ -290,8 +290,15 @@ function hide() {
 var main = function() {
   $(document).keypress(function(event) {
  if(event.which === 32) {
-  $('.soundoff').toggle();
+  $("video").trigger("pause");
   $('.sticky').toggle();
+  $('.soundoff').toggle();
+});
+};
+
+$(document).ready(main);
+
+    /*
     if ($(this).hasClass('pause')) {
      $("video").trigger("play");
      $(this).removeClass('pause');
@@ -303,16 +310,9 @@ var main = function() {
      $(this).addClass('pause');
      $('.sticky').show();
      $('.abt').hide();
+     
 };
-
-
-};
-
-});
-};
-
-$(document).ready(main);
-
+};*/
 
 
 // blue= #00001D

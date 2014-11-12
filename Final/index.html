@@ -291,9 +291,16 @@ var main = function() {
   $(document).keypress(function(event) {
  if(event.which === 32) {
   $("video").trigger("pause");
-  $('.sticky').toggle();
-  $('.soundoff').toggle();
+  $('.sticky').show();
+  $('.soundoff').show();
+}
+
+else if(event.which === 32) {
+$("video").trigger("play");
+  $('.sticky').hide();
+  $('.soundoff').hide();
 };
+
 });
 };
 

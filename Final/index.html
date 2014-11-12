@@ -285,6 +285,27 @@ function hide() {
         justHidden = false;
     }, 1000)};
 
+var main = function() {
+  $(document).keypress(function(event) {
+ if(event.which === 32) {
+    if ($(this).hasClass('pause')) {
+     $("video").trigger("play");
+     $(this).removeClass('pause');
+     $(this).addClass('play');
+     $('.sticky').hide();
+
+} else {
+     $("video").trigger("pause");
+     $(this).removeClass('play');
+     $(this).addClass('pause');
+     $('.sticky').show();
+     $('.abt').hide();
+}
+};
+});
+};
+
+$(document).ready(main);
 
 
 

@@ -206,7 +206,8 @@ if ($(this).hasClass('pause')) {
      $(this).addClass('pause');
      $('.sticky').show();
      $('.abt').hide();
-}});
+}
+});
 
 
 
@@ -294,16 +295,14 @@ var main = function() {
      $(this).removeClass('pause');
      $(this).addClass('play');
      $('.sticky').hide();
- 
-
 } else {
      $("video").trigger("pause");
      $(this).removeClass('play');
      $(this).addClass('pause');
      $('.sticky').show();
      $('.abt').hide();
-     
-}
+};
+
 $('.soundoff').toggle();
 $('video').toggle(
         function () {

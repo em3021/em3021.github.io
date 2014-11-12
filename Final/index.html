@@ -290,18 +290,24 @@ function hide() {
 var main = function() {
   $(document).keypress(function(event) {
  if(event.which === 32) {
-  $("video").trigger("pause");
-  $('.sticky').show();
-  $('.soundoff').show();
+if ($(this).hasClass('play')) {
+     $("video").trigger("pause");
+     $(this).removeClass('play');
+     $(this).addClass('pause');
+     $('.sticky').show();
+     $('.soundoff').show();
+};
 }
 
 else {if(event.which === 32) {
-$("video").trigger("play");
+  $("video").trigger("pause");
+  $(this).removeClass('pause');
+  $(this).addClass('play');
   $('.sticky').hide();
   $('.soundoff').hide();
 };
 };
-
+};
 });
 };
 

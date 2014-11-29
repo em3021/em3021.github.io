@@ -48,7 +48,7 @@
 </div>
 
 <span>
-         <video id="video1" controls="false" preload="none" loop>
+         <video id="video1" class="current" controls="false" preload="none" loop>
     <source src="media/northtosouth.mp4#t=4" type="video/mp4">
     </video>
     </span>
@@ -126,72 +126,23 @@ $(document).ready(function() {
 });
 
 
-$('.c1').click(function(){
-  $('#video1').hide().get(0).pause()
-  $('#video3').hide().get(0).pause()
-  $('#video4').hide().get(0).pause()
-  $('#video5').hide().get(0).pause()
-  $('#video6').hide().get(0).pause()
+var main = function() {
+$('video').click(function() {
+    $('video').removeClass('current');
+    $(this).hide().get(0).pause();
 
-  $('#video2').fadeIn(1000).get(0).play()
-
+    $(this).addClass('current');
+    $(this).fadeIn(1000).get(0).play();
+    
   });
+    };
 
-
-$('.c2').click(function(){
-  $('#video1').hide().get(0).pause()
-  $('#video3').hide().get(0).pause()
-  $('#video2').hide().get(0).pause()
-  $('#video5').hide().get(0).pause()
-  $('#video6').hide().get(0).pause()
-
-  $('#video4').fadeIn(1000).get(0).play()
-  });
-
-$('.c3').click(function(){
-   $('#video1').hide().get(0).pause()
-  $('#video3').hide().get(0).pause()
-  $('#video4').hide().get(0).pause()
-  $('#video2').hide().get(0).pause()
-  $('#video6').hide().get(0).pause()
-
-  $('#video5').fadeIn(1000).get(0).play()
-  });
-
-$('.c4').click(function(){
- $('#video1').hide().get(0).pause()
-  $('#video2').hide().get(0).pause()
-  $('#video4').hide().get(0).pause()
-  $('#video5').hide().get(0).pause()
-  $('#video6').hide().get(0).pause()
-
-  $('#video3').fadeIn(1000).get(0).play()
-  });
-
-$('.c5').click(function(){
-  $('#video3').hide().get(0).pause()
-  $('#video4').hide().get(0).pause()
-  $('#video5').hide().get(0).pause()
-  $('#video6').hide().get(0).pause()
-  $('#video2').hide().get(0).pause()
-
-  $('#video1').fadeIn(1000).get(0).play()
-  });
-
-$('.c6').click(function(){
- $('#video1').hide().get(0).pause()
-  $('#video3').hide().get(0).pause()
-  $('#video4').hide().get(0).pause()
-  $('#video5').hide().get(0).pause()
-  $('#video2').hide().get(0).pause()
-
-  $('#video6').fadeIn(1000).get(0).play()
-  });
 
 
 $( ".home" ).click(function() {
          location.reload(true);
 });
+
 
 $('video').click(function() {
 if ($(this).hasClass('pause')) {
@@ -284,7 +235,7 @@ function hide() {
     justHidden = true;
     setTimeout(function() {
         justHidden = false;
-    }, 1000)};
+    }, 1000)}; 
 
 
 /* var main = function() {

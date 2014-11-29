@@ -128,11 +128,11 @@ $(document).ready(function() {
 
 var main = function() {
 $('video').click(function() {
-    $('video').removeClass('current');
-    $(this).hide().get(0).pause();
 
     $(this).addClass('current');
     $(this).fadeIn(1000).get(0).play();
+
+    $('video').hide().get(0).pause();
     
   });
     };

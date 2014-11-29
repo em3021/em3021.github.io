@@ -30,68 +30,12 @@
 
 <div id="map"><div id="map-continents">
          <ul class="continents">
-          <li class="c1"><a href="#africa">Africa</a>
-
-             <span>
-             <video id="video1" controls="false" preload="none" loop>
-            <source src="media/northtosouth.mp4#t=4" type="video/mp4">
-            </video>
-            </span>
-
-          </li>
-
-          <li class="c2"><a href="#asia">Asia</a>
-
-            <span >
-                 <video id="video2" controls="false" preload="none" loop>
-            <source src="media/africa.mp4#t=4" type="video/mp4">
-            </video>
-            </span>
-
-          </li>
-
-
-          <li class="c3"><a href="#australia-and-southern-pacific">Australia and Southern Pacific</a>
-
-           <span >
-                   <video id="video3" controls="false" preload="none" loop>
-              <source src="media/spain.mp4#t=4" type="video/mp4">
-              </video>
-              </span>
-
-          </li>
-
-          <li class="c4"><a href="#europe">Europe</a>
-
-
-            <span >
-                     <video id="video4" controls="false" preload="none" loop>
-                <source src="media/china.mp4#t=5" type="video/mp4">
-                </video>
-                </span>
-
-          </li>
-
-          <li class="c5"><a href="#north-america">North America</a>
-
-              <span >
-                       <video id="video5" controls="false" preload="none" loop>
-                  <source src="media/phillipines.mp4#t=4" type="video/mp4">
-                  </video>
-                </span>
-
-          </li>
-
-          <li class="c6"><a href="#south-america">South America</a>
-
-              <span >
-                       <video id="video6" controls="false" preload="none" loop>
-                  <source src="media/samerica.mp4" type="video/mp4">
-                  </video>
-                  </span>
-
-
-          </li>
+          <li class="c1"><a href="#africa">Africa</a></li>
+          <li class="c2"><a href="#asia">Asia</a></li>
+          <li class="c3"><a href="#australia-and-southern-pacific">Australia and Southern Pacific</a></li>
+          <li class="c4"><a href="#europe">Europe</a></li>
+          <li class="c5"><a href="#north-america">North America</a></li>
+          <li class="c6"><a href="#south-america">South America</a></li>
          </ul>
 
 </div></div>
@@ -103,7 +47,40 @@
 <a href="mailto:em3021@columbia.edu?Subject=Space is Awesome"><span class="contact">CONTACT</span></a>
 </div>
 
+    <span>
+         <video id="video5" controls="false" preload="none" loop>
+    <source src="media/northtosouth.mp4#t=4" type="video/mp4">
+    </video>
+    </span>
 
+    <span >
+         <video id="video1" controls="false" preload="none" loop>
+    <source src="media/africa.mp4#t=4" type="video/mp4">
+    </video>
+    </span>
+    
+    <span >
+         <video id="video4" controls="false" preload="none" loop>
+    <source src="media/spain.mp4#t=4" type="video/mp4">
+    </video>
+    </span>
+<span >
+         <video id="video2" controls="false" preload="none" loop>
+    <source src="media/china.mp4#t=5" type="video/mp4">
+    </video>
+    </span>
+
+<span >
+         <video id="video3" controls="false" preload="none" loop>
+    <source src="media/phillipines.mp4#t=4" type="video/mp4">
+    </video>
+    </span>
+
+<span >
+         <video id="video6" controls="false" preload="none" loop>
+    <source src="media/samerica.mp4" type="video/mp4">
+    </video>
+    </span>
 
     <span>
       <audio id="song" src="media/Celestial_Plains.mp3" loop="loop" ></audio>
@@ -150,13 +127,13 @@ $(document).ready(function() {
 
 
 $('.c1').click(function(){
-  $('#video1').hide().get(0).pause()
+  $('#video2').hide().get(0).pause()
   $('#video3').hide().get(0).pause()
   $('#video4').hide().get(0).pause()
   $('#video5').hide().get(0).pause()
   $('#video6').hide().get(0).pause()
 
-  $('#video2').fadeIn(1000).get(0).play()
+  $('#video1').fadeIn(1000).get(0).play()
 
   });
 
@@ -164,41 +141,41 @@ $('.c1').click(function(){
 $('.c2').click(function(){
   $('#video1').hide().get(0).pause()
   $('#video3').hide().get(0).pause()
+  $('#video4').hide().get(0).pause()
+  $('#video5').hide().get(0).pause()
+  $('#video6').hide().get(0).pause()
+
+  $('#video2').fadeIn(1000).get(0).play()
+  });
+
+$('.c3').click(function(){
+   $('#video1').hide().get(0).pause()
+  $('#video5').hide().get(0).pause()
+  $('#video4').hide().get(0).pause()
   $('#video2').hide().get(0).pause()
+  $('#video6').hide().get(0).pause()
+
+  $('#video3').fadeIn(1000).get(0).play()
+  });
+
+$('.c4').click(function(){
+ $('#video1').hide().get(0).pause()
+  $('#video2').hide().get(0).pause()
+  $('#video3').hide().get(0).pause()
   $('#video5').hide().get(0).pause()
   $('#video6').hide().get(0).pause()
 
   $('#video4').fadeIn(1000).get(0).play()
   });
 
-$('.c3').click(function(){
-   $('#video1').hide().get(0).pause()
-  $('#video3').hide().get(0).pause()
-  $('#video4').hide().get(0).pause()
-  $('#video2').hide().get(0).pause()
-  $('#video6').hide().get(0).pause()
-
-  $('#video5').fadeIn(1000).get(0).play()
-  });
-
-$('.c4').click(function(){
- $('#video1').hide().get(0).pause()
-  $('#video2').hide().get(0).pause()
-  $('#video4').hide().get(0).pause()
-  $('#video5').hide().get(0).pause()
-  $('#video6').hide().get(0).pause()
-
-  $('#video3').fadeIn(1000).get(0).play()
-  });
-
 $('.c5').click(function(){
   $('#video3').hide().get(0).pause()
   $('#video4').hide().get(0).pause()
-  $('#video5').hide().get(0).pause()
+  $('#video1').hide().get(0).pause()
   $('#video6').hide().get(0).pause()
   $('#video2').hide().get(0).pause()
 
-  $('#video1').fadeIn(1000).get(0).play()
+  $('#video5').fadeIn(1000).get(0).play()
   });
 
 $('.c6').click(function(){

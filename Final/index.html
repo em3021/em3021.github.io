@@ -126,18 +126,67 @@ $(document).ready(function() {
 });
 
 
-var main = function() {
-$('li').click(function() {
-    $('video').removeClass('current');
-    $('video').hide().get(0).pause();
+$('.c1').click(function(){
+  $('#video1').hide().get(0).pause()
+  $('#video3').hide().get(0).pause()
+  $('#video4').hide().get(0).pause()
+  $('#video5').hide().get(0).pause()
+  $('#video6').hide().get(0).pause()
 
-    $('this').addClass('current');
-    $('this').fadeIn(1000).get(0).play();
-    
+  $('#video2').fadeIn(1000).get(0).play()
+
   });
-    };
 
-$(document).ready(main);
+
+$('.c2').click(function(){
+  $('#video1').hide().get(0).pause()
+  $('#video3').hide().get(0).pause()
+  $('#video2').hide().get(0).pause()
+  $('#video5').hide().get(0).pause()
+  $('#video6').hide().get(0).pause()
+
+  $('#video4').fadeIn(1000).get(0).play()
+  });
+
+$('.c3').click(function(){
+   $('#video1').hide().get(0).pause()
+  $('#video3').hide().get(0).pause()
+  $('#video4').hide().get(0).pause()
+  $('#video2').hide().get(0).pause()
+  $('#video6').hide().get(0).pause()
+
+  $('#video5').fadeIn(1000).get(0).play()
+  });
+
+$('.c4').click(function(){
+ $('#video1').hide().get(0).pause()
+  $('#video2').hide().get(0).pause()
+  $('#video4').hide().get(0).pause()
+  $('#video5').hide().get(0).pause()
+  $('#video6').hide().get(0).pause()
+
+  $('#video3').fadeIn(1000).get(0).play()
+  });
+
+$('.c5').click(function(){
+  $('#video3').hide().get(0).pause()
+  $('#video4').hide().get(0).pause()
+  $('#video5').hide().get(0).pause()
+  $('#video6').hide().get(0).pause()
+  $('#video2').hide().get(0).pause()
+
+  $('#video1').fadeIn(1000).get(0).play()
+  });
+
+$('.c6').click(function(){
+ $('#video1').hide().get(0).pause()
+  $('#video3').hide().get(0).pause()
+  $('#video4').hide().get(0).pause()
+  $('#video5').hide().get(0).pause()
+  $('#video2').hide().get(0).pause()
+
+  $('#video6').fadeIn(1000).get(0).play()
+  });
 
 $( ".home" ).click(function() {
          location.reload(true);

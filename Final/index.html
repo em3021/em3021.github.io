@@ -47,8 +47,8 @@
 <a href="mailto:em3021@columbia.edu?Subject=Space is Awesome"><span class="contact">CONTACT</span></a>
 </div>
 
-<span>
-         <video id="video1" class="current" controls="false" preload="none" loop>
+    <span>
+         <video id="video1" controls="false" preload="none" loop>
     <source src="media/northtosouth.mp4#t=4" type="video/mp4">
     </video>
     </span>
@@ -127,12 +127,12 @@ $(document).ready(function() {
 
 
 var main = function() {
-$('video').click(function() {
+$('li').click(function() {
+    $('video').removeClass('current');
+    $('this').hide().get(0).pause();
 
-    $(this).addClass('current');
-    $(this).fadeIn(1000).get(0).play();
-
-    $('video').hide().get(0).pause();
+    $('this').addClass('current');
+    $('this').fadeIn(1000).get(0).play();
     
   });
     };

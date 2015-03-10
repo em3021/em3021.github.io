@@ -48,7 +48,7 @@ letter-spacing: 1px;
 }
 span {cursor: pointer; padding-right: 5%;}
 .hillary {height: 200px; border-radius: 100px;}
-.selected {background: #383838; color: white;}
+.soundcite .selected {background: #383838; color: white;}
 .ML {margin-top: 250px; font-weight: 500;}
 .tam {width: 100px;}
 
